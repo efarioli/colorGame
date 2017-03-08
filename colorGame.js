@@ -29,6 +29,7 @@ easyBtn.addEventListener("click", function(){
 		}
 
 	}
+	messageDisplay.textContent="";
 });
 hardBtn.addEventListener("click", function(){
 	easyBtn.classList.remove("selected");
@@ -42,6 +43,7 @@ hardBtn.addEventListener("click", function(){
 		squares[i].style.display = "block";
 	
 	}
+	messageDisplay.textContent="";
 	
 });
 
@@ -56,7 +58,9 @@ resetButton.addEventListener("click", function(){
 	for (var  i=0; i<squares.length; i++) {
 		squares[i].style.background = colors[i];
 	}
-	h1.style.background = "#232312"
+	h1.style.background = "steelblue";
+	messageDisplay.textContent="";
+
 });
 
 for(var i=0; i <squares.length; i++) {
